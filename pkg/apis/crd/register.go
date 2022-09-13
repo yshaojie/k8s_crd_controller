@@ -1,6 +1,6 @@
 package crd
 
 const (
-	GroupName = "crd.k8s.io"
+	GroupName = "crd.rain.io"
 	Version   = "v1"
 )

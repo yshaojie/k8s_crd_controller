@@ -138,6 +138,7 @@ func (c *Controller) enqueueMydemoForDelete(obj interface{}) {
 //runWorker是一个不断运行的方法，并且一直会调用c.processNextWorkItem从workqueue读取和读取消
 func (c *Controller) runWorker() {
 	for c.processNextWorkItem() {
+
 	}
 }
 

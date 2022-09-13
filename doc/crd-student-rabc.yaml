@@ -1,0 +1,23 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: rain-crd-object
+  namespace: default
+rules:
+  - apiGroups: ["crd.rain.io"]
+    resources: ["student"]
+    verbs: ["create", "delete", "deletecollection", "patch", "update", "get", "list", "watch"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: rain-crd-object
+  namespace: default
+subjects:
+  - kind: User
+    name: "239333045690036384"
+    apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: Role
+  name: rain-crd-object
+  apiGroup: rbac.authorization.k8s.io

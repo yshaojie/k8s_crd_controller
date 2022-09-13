@@ -1,0 +1,8 @@
+apiVersion: crd.rain.io/v1
+kind: Student
+metadata:
+  name: yueshaojie-sample
+spec:
+  # Add fields here
+  name: 'yue'
+  school: 'my school'
